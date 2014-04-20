@@ -1,2 +1,2 @@
 program: fakt.c
-  gcc -o  fakt.c -I
+  gcc -o  fakt.c test.c -I

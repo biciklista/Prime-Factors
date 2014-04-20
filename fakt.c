@@ -7,6 +7,7 @@ int fakt()
 	int i=2;
 	scanf_s("%d", &num);	
 
+	printf("%d -> [", num);
 	while(num)
 	{		
 			if(num%i!=0)
@@ -16,11 +17,15 @@ int fakt()
 			else
 			{
 				num/=i;
-				printf("%d ", i);
+				printf("%d, ", i);
 			}
 
 			if(num==1)
+			{
+				printf("]")
 				return 0;
+				
+			}
 	}
 
 	return 0;
